@@ -15,9 +15,9 @@ const templates = () => {
   return gulp
     .src([
       "src/views/pages/**/*.ejs",
-      "!src/views/pages/**/sections/**/*.ejs",
+      "src/views/pages/**/sections/**/*.ejs",
       "src/common/**/*.ejs",
-      "src/common/**/sections/**/*.ejs",
+      "!src/common/**/sections/**/*.ejs",
     ])
     .pipe(gulpEjsMonster().on("error", gulpEjsMonster.preventCrash))
     .pipe(rename({ extname: ".html" }))
