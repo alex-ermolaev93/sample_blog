@@ -1,0 +1,23 @@
+@import "../../../../../styles/variables.scss";
+@import "../../../../../styles/mixins/mixins.scss";
+
+.hero {
+    position: relative;
+    // height: 850px;
+    width: 100%;
+    background: url(./images/Layer_66.png) no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: $background_color_black;
+    // opacity: 0.5;
+    z-index: 9;
+}
+.hero__img{
+
+    // background-color: $background_color_black;
+    // opacity: 0.7;
+    z-index: 5;
+}

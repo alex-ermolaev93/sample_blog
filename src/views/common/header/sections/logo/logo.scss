@@ -1,0 +1,59 @@
+@import "../../../../../styles/variables.scss";
+@import "../../../../../styles/mixins/mixins.scss";
+
+
+
+
+.logo {
+
+    &__title {
+        color: $color_text_white;
+        font-family: $main_font;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        text-transform: uppercase;
+    }
+}
+
+
+.menu {
+    width: 70%;
+
+    &__list {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+
+        &__item {
+            &__link {
+                margin-top: 10px;
+                font-family: $main_font;
+                color: $color_text_white;
+                font-size: 14px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.7px;
+            }
+        }
+    }
+
+}
+
+.for__icons {
+    &__items {
+        margin-top: 10px;
+
+        color: $color_text_white;
+    }
+
+    display: flex;
+}
+
+.fab,
+.fas,
+.far {
+    color: $color_text_white;
+}

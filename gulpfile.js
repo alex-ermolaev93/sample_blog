@@ -15,7 +15,7 @@ const templates = () => {
   return gulp
     .src([
       "src/views/pages/**/*.ejs",
-      "src/views/pages/**/sections/**/*.ejs",
+      "!src/views/pages/**/sections/**/*.ejs",
       "src/common/**/*.ejs",
       "!src/common/**/sections/**/*.ejs",
     ])
@@ -33,7 +33,7 @@ const styles = () => {
         "src/styles/main.scss",
         "src/views/**/*.scss",
         "src/common/**/*.scss",
-        "!src/common/**/sections/**/*.scss"
+        "src/common/**/sections/**/*.scss"
       ])
       .pipe(sourcemaps.init())
       .pipe(sassGlob())
@@ -80,6 +80,7 @@ const watchFiles = () => {
       "src/views/pages/**/**/*.ejs",
       "src/views/pages/**/sections/**/*.ejs",
       "src/common/**/*.ejs",
+      "src/common/**/sections/**/*.ejs",
     ],
     templates
   );
