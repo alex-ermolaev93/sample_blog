@@ -12,16 +12,15 @@
                     <li class="menu__list__item"><a href="#" class='menu__list__item__link'>features</a></li>
                 </ul>
             </nav>
-            <div class="footer__search">search<i class="icon search"></i></div>
-            <div class="sing_in__language"><i class="icon language"></i><select size="3" multiple name="hero[]">
-                <option value="eng">eng</option>
-                <option value="ukr">ukr</option>
-                <option value="rus">rus</option>
-            </select> </div>
+            <div class="footer__search">search<i class="fas fa-search"></i></div>
+            <div class="sing_in__language">
+                <i class="icons__color fas fa-globe"></i>
+                <a  class="sing_in__link__text" >eng <i class="icons__color fas fa-angle-down"></i> </a>
+            </div>
         </div>
-        <div class="footer__mobile">
+        <div class="footer__mobile hidden">
             <%- include('../../common/icons/icons.ejs') -%>
-            <div class="footer__mobile__subtitle">&#169; 2016 LOGO | All Rights Reserved  </div>
+            <div class="footer__mobile__subtitle hidden">&#169; 2016 LOGO | All Rights Reserved  </div>
         </div>
     </div>
 </footer>
