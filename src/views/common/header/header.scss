@@ -2,9 +2,14 @@
 @import "../../../styles/mixins/mixins.scss";
 
 .header {
-    position: relative;
+    // position: relative;
 
-    padding-bottom: 20px;
+    // padding-bottom: 20px;
+    // width: 100%;
+    // z-index: 9;
+    position: absolute;
+    padding: 0;
+    // height: 100px;
     width: 100%;
     z-index: 9;
 

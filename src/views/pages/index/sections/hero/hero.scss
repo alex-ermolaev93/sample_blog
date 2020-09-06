@@ -3,21 +3,111 @@
 
 .hero {
     position: relative;
-    // height: 850px;
+    height: 850px;
+    margin-top: 40px;
     width: 100%;
-    background: url(./images/Layer_66.png) no-repeat;
+    background: url(../images/68.png) no-repeat;
     background-size: cover;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    // background-color: $background_color_black;
-    // opacity: 0.5;
-    z-index: 9;
-}
-.hero__img{
+    z-index: 4;
 
-    // background-color: $background_color_black;
-    // opacity: 0.7;
-    z-index: 5;
+    &__img__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 250px 0 0 0;
+        height: 981px;
+        width: 100%;
+        background: url(../images/bg_.png) no-repeat;
+
+    }
+
+    &__title__wrapper {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    &__title {
+        opacity: 0.7;
+        color: #ffffff;
+        font-family: $main_font;
+        font-size: 28px;
+        font-weight: 400;
+        font-variant: small-caps;
+        letter-spacing: 1.4px;
+    }
+
+    &__subtitle {
+        width: 50%;
+        height: 83px;
+        color: #ffffff;
+        font-family: $main_font;
+        font-size: 42px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 2.1px;
+    }
+
+    &__btn {
+        padding: 5px 0;
+        color: $color_text_white;
+        font-family: $main_font;
+        font-size: 24px;
+        font-weight: 400;
+        font-variant: small-caps;
+        letter-spacing: 1.2px;
+
+        &__inner {
+            width: 170px;
+            height: 45px;
+            box-shadow: 0 17px 24px rgba(48, 63, 159, 0.2);
+            border-radius: 22px;
+            background-color: #303f9f;
+        }
+
+    }
+
+    &__profile__photo {}
+
+    &__profile__name {
+        color: $color_text_white;
+        font-family: $main_font;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.7px;
+    }
+
+    &__profile__date {
+        opacity: 0.54;
+        color: $color_text_white;
+        font-family: $main_font;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0.6px;
+
+    }
+&__profile__comm__wrapper{
+    display: flex;
+    justify-content: space-around;
+
+}
+    &__profile__comm {
+        opacity: 0.7;
+        color: $color_text_white;
+        font-family: $main_font;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 27px;
+        letter-spacing: 0.6px;
+    }
+
 }
