@@ -1,0 +1,129 @@
+@import "../../../../../styles/variables.scss";
+@import "../../../../../styles/mixins/mixins.scss";
+
+
+.galere__wrapper {
+    margin-bottom: -5px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+
+}
+
+.subscribe {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    &__wrapper {
+        position: relative;
+        height: 200px;
+        width: 100%;
+        background: $background_color_black url(../images/Layer_60.png) no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 4;
+
+    }
+
+    &__inner {
+        padding-right: 10px;
+    }
+
+    &__title {
+        height: 36px;
+        color: $color_text_white;
+        font-family: "Montserrat - Black", sans-serif;
+        font-size: 42px;
+        font-weight: 400;
+        line-height: 36px;
+        letter-spacing: 2.1px;
+    }
+
+    &__email {
+        padding: 15px;
+        width: 270px;
+        height: 45px;
+        border-radius: 22px;
+        border: 1px solid #ffffff;
+        background-color: #303030;
+        opacity: 0.54;
+        color: #ffffff;
+        font-family: "Open Sans";
+
+    }
+
+
+    &__submit {
+        width: 170px;
+        height: 45px;
+        box-shadow: 0 17px 24px rgba(48, 63, 159, 0.2);
+        border-radius: 22px;
+        background-color: #303f9f;
+
+        &__btn__text {
+
+            padding: 9px 29px;
+            color: $background_color_white;
+            font-family: $main_font;
+            font-size: 24px;
+            font-weight: 400;
+            font-variant: small-caps;
+        }
+    }
+
+
+
+}
+
+.subscribe_bar {
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+
+    &__wrapper {
+        background-color: $background_color_black;
+    }
+
+    &__section {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+
+        &__title {
+            color: $color_text_white;
+            font-family: $main_font;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.15px;
+        }
+
+        &__content__wrapper {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__content__img__inner {
+
+            padding: 0 5px 0 0;
+        }
+
+        &__input {
+
+
+            &__wrapper {
+                width: 270px;
+                height: 45px;
+                border-radius: 4px;
+                border: 1px solid #ffffff;
+
+            }
+        }
+    }
+}
