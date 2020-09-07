@@ -17,7 +17,7 @@
     &__img__wrapper {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        // justify-content: center;
         align-items: center;
         margin: 250px 0 0 0;
         height: 981px;
@@ -27,10 +27,12 @@
     }
 
     &__title__wrapper {
+        margin: 250px 0 0 0;
+
         text-align: center;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
 
     }
@@ -46,7 +48,6 @@
     }
 
     &__subtitle {
-        width: 50%;
         height: 83px;
         color: #ffffff;
         font-family: $main_font;
@@ -54,6 +55,9 @@
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 2.1px;
+        &__inner{
+            padding: 20px 65px 81px;
+        }
     }
 
     &__btn {
@@ -66,6 +70,7 @@
         letter-spacing: 1.2px;
 
         &__inner {
+            margin: 15px 0;
             width: 170px;
             height: 45px;
             box-shadow: 0 17px 24px rgba(48, 63, 159, 0.2);

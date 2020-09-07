@@ -25,4 +25,17 @@
 
         align-items: center;
     }
+    &__section__description__wrapper{
+display: flex;
+flex-direction: column;
+    }
+
+    &__section__second__inner {
+        display: flex;
+        width: 820px;
+        height: 165px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+        background-color: #ffffff;
+    }
 }
