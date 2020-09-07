@@ -1,0 +1,11 @@
+@import "./variables.scss";
+@import "./mixins/mixins.scss";
+section { 
+    margin-top: 150px; 
+  }
+  @media (max-width: 991px) {  
+    section {
+      margin-top: 50px;
+    }  
+  }
+

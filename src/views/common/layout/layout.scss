@@ -1,0 +1,145 @@
+/*screen sizes*/
+$xl-up: 1400px;
+$xl-down: 1399px;
+
+$lg-up: 1200px;
+$lg-down: 1199px;
+
+$md-up: 992px;
+$md-down: 991px;
+
+$sm-up: 768px;
+$sm-down: 767px;
+
+$xs-up: 650px;
+$xs-down: 649px;
+
+$xxs-up: 450px;
+$xxs-down: 449px;
+
+/*container sizes*/
+$lg-container: 1170px;
+$md-container: 970px;
+$sm-container: 750px;
+
+/* footer */
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; 
+}
+.content {
+  flex: 1 0 auto;
+} 
+.footer {
+  flex: 0 0 auto;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  a {
+    display: block;
+    text-decoration: none;
+  }
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: $sm-up) {
+    width: $sm-container;
+  }
+
+  @media (min-width: $md-up) {
+    width: $md-container;
+  }
+
+  @media (min-width: $lg-up) {
+    width: $lg-container;
+  }
+
+  &:before,
+  &:after {
+    display: table;
+    content: " ";
+  }
+}
+
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.hidden {
+  display: none !important;
+  &-xs-down {
+    @media (max-width: $xs-down) {
+      display: none !important;
+    }
+  }
+
+  &-xs-up {
+    @media (min-width: $xs-up) {
+      display: none !important;
+    }
+  }
+
+  &-sm-down {
+    @media (max-width: $sm-down) {
+      display: none !important;
+    }
+  }
+  &-sm-up {
+    @media (min-width: $sm-up) {
+      display: none !important;
+    }
+  }
+
+  &-md-down {
+    @media (max-width: $md-down) {
+      display: none !important;
+    }
+  }
+
+  &-md-up {
+    @media (min-width: $md-up) {
+      display: none !important;
+    }
+  }
+
+  &-lg-down {
+    @media (max-width: $lg-down) {
+      display: none !important;
+    }
+  }
+
+  &-lg-up {
+    @media (min-width: $lg-up) {
+      display: none !important;
+    }
+  }
+}
