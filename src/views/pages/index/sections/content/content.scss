@@ -1,0 +1,28 @@
+@import "../../../../../styles/variables.scss";
+@import "../../../../../styles/mixins/mixins.scss";
+
+.content {
+    width: 100%;
+    background-color: #f5f5f5;
+
+    &__wrapper {
+        width: 60%;
+    }
+
+    &__section__first {
+        width: 100%;
+        width: 820px;
+        height: 620px;
+        box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+        background-color: #ffffff;
+
+
+    }
+
+    &__section__profile__wrapper {
+        display: flex;
+
+        align-items: center;
+    }
+}
